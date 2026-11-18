@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <style>
+    p {
+        color:red;
+        font-size:24px;
+    }
+</style>
+     <head>
+         <meta charset="utf-8" />                       <!-- 设置本文档字符编码 -->
+         <title>我的第一个html文件</title>
+     </head>
+     <body>
+        <h1>这是一级标题标签</h1>
+       <h2>这是二级标题标签</h2>
+       <h3>这是三级标题标签</h3>
+        <h4>这是四级标题标签</h4>
+       <h5>这是五级标题标签</h5>
+      <h6>这是六级标题标签</h6>
+      <p>这是一个段落标签</p>
+      <p>这是一个段落标签。<br>这个段落的内容是：如何更好的学习html</p>
+      <img src=".\image\Snipaste_2026-11-04_09-38-31.jpg" alt="秋天的景色" title="秋天的景色">
+      <a href="http://www.baidu.com">跳转到百度</a>
+      <ul>
+    <li>HTML语言</li>
+    <li>CSS样式表</li>
+    <li>javaScript语言</li>
+</ul>
+<ol>
+    <li>HTML语言</li>
+    <li>CSS样式表</li>
+    <li>javaScript语言</li>
+</ol>
+<!--
+    dl：声明定义列表
+    dt：声明列表项
+    dd：定义列表项内容
+-->
+<dl>
+    <dt>HTML</dt>
+    <dd>制作网页的标准语言，控制网页的结构</dd>
+    <dt>CSS</dt>
+    <dd>层叠样式表，控制网页的样式</dd>
+    <dt>JavaScript</dt>
+    <dd>脚本语言，控制网页的行为</dd>
+</dl>
+<!--
+    表格标签：
+    table：整个表格的最外层标签
+    tr：行标签
+    th：表格标题标签
+    td：列标签，一个td，就是一个单元格
+    表格标签属性：
+    border：边框宽度
+-->
+<table border="1">
+    <tr>
+        <th>第一列</th>
+        <th>第二列</th>
+    </tr>
+    <tr>
+        <td>这是第一行第一列</td>
+        <td>这是第一行第二列</td>
+    </tr>
+    <tr>
+        <td>这是第二行第一列</td>
+        <td>这是第二行第二列</td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <td colspan="2">这是第一行第一列</td>
+        <td>这是第一行第三列</td>
+    </tr>
+    <tr>
+        <td rowspan="2">这是第二行第一列</td>
+        <td>这是第二行第二列</td>
+        <td>这是第二行第三列</td>
+    </tr>
+    <tr>
+        <td>这是第三行第二列</td>
+        <td>这是第三行第三列</td>
+    </tr>
+</table>
+<!-- 
+    form是表单最外层标签。
+    action属性：提交服务器地址
+    method属性：提交方式：get、post
+-->
+<form action="XXXX" method="get">
+    <!-- placeholder属性为HTML5新增属性：提供可描述输入字段预期值的提示信息 -->
+<input type="text" placeholder="用户名" value="zhangsan" />
+<input type="password"/>
+<input type="radio" name="sex" value="0" checked="true"/>男
+<input type="radio" name="sex" value="1"/>女
+<input type="checkbox" name="like" value="0" checked=" true" />读书
+<input type="checkbox" name="like" value="1" />体育
+<input type="checkbox" name="like" value="2" />游戏
+<select name="nationality">
+    <option value="0" selected="true">中国</option>
+    <option value="1">美国</option>
+    <option value="2">英国</option>
+</select>
+<input type="file" name="files" /><!-- 将表单全部内容，提交给action属性指定的服务器。一个表单都应该有一个提交按钮。-->
+<input type="submit" value="提交" />
+<input type="reset" value="重置" />
+<input type="button" value="点击我">
+<button>点击我</button>
+<input type="text" name="username" readonly/>
+<input type="text" name="username" disabled/>
+</form>
+         hello world!
+     </body>
+</html>
